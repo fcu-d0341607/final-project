@@ -29,13 +29,21 @@
     <form>
             <div class="form-group">
               <label for="name">請輸入您的名字</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <input type="name" class="form-control" id="customData" aria-describedby="emailHelp" placeholder="Enter your name">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <label for="address">請輸入寄送地址</label>
+              <input type="address" class="form-control" id="customData" placeholder="Enter your address">
             </div>
+            <div class="form-group col-md-4">
+                <label for="inputPay">請選擇付款方式</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option value="atm">ATM</option>
+                  <option value="shop">超商付款</option>
+                  <option value="after">貨到付款</option>
+                </select>
+              </div>
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
